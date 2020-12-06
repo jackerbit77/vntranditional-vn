@@ -1,0 +1,495 @@
+:root {
+  --bg-primary: #2c4642;
+  --text-primary: #ecaa1f;
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Common */
+button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Header */
+#header {
+  width: 100%;
+  height: 18rem;
+  background-color: var(--bg-primary);
+  padding: 0 0 0 5rem;
+}
+#menuTransit {
+  height: 100%;
+}
+#menuTransit span {
+  display: inline-flex;
+  padding: 3rem 4rem;
+}
+#menuTransit span img {
+  width: 15rem;
+  height: 10rem;
+}
+#menuTransit span a {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#menuSearch button i {
+  cursor: pointer;
+}
+#menuSearch #btnSearch {
+  font-size: 3rem;
+  color: #788c8d;
+  margin-right: 1.5rem;
+}
+#menuSearch #btnMenu {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #788c8d;
+  padding: .35rem 1.25rem;
+}
+
+/* Footer */
+#footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 2rem 12rem 4rem 12rem;
+  background-color: #455a5b;
+}
+#footer div:first-child img {
+  margin-top: -6rem;
+  margin-right: 5rem;
+  width: 35rem;
+}
+#footer div:first-child p {
+  margin-top: -3rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+#footer div:nth-child(2) p:first-child {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+#footer div:nth-child(2) p a {
+  color: #fff;
+  font-size: 1.4rem;
+}
+#footer div:nth-child(3) p:first-child {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+#footer div:nth-child(3) div img {
+  cursor: pointer;
+}
+#footer div:nth-child(3) p:last-child {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+
+/* Common */
+.page-content {
+  position: relative;
+  height: auto;
+}
+
+
+/* Home Page*/
+.home-page {
+  background-color: var(--bg-primary);
+}
+.home-page #firstSec img {
+  height: 100%;
+  width: 100%;
+}
+.home-page #secondSec {
+  margin-top: 8rem;
+}
+.home-page #secondSec h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--text-primary);
+  text-align: center;
+}
+.home-page #secondSec p {
+  margin-top: 3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.home-page #secondSec div {
+  margin-top: 8rem;
+  width: 100%;
+  padding: 0 8rem;
+}
+.home-page #secondSec div span {
+  width: 35rem;
+  height: 35rem;
+  border: 1px solid var(--text-primary);
+  margin-left: 4rem;
+  margin-right: 4rem; 
+}
+.home-page #secondSec div span img {
+  width: 100%;
+  height: 100%;
+}
+.home-page #thirdSec {
+  margin-top: 8rem;
+}
+.home-page #thirdSec h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+}
+.home-page #thirdSec > div {
+  margin-top: 8rem;
+  width: 100%;
+  padding: 0 8rem;
+}
+.home-page #thirdSec div span {
+  position: relative;
+  width: 40rem;
+  height: auto;
+  margin-left: 4rem;
+  margin-right: 4rem; 
+  background-color: #d6ccb8;
+  display: inline-block;
+}
+.home-page #thirdSec div span img {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-bottom: 1.25rem;
+}
+.home-page #thirdSec div span p {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0 1.5rem;
+}
+.home-page #thirdSec div span p.date,
+.home-page #thirdSec div span p.summary {
+  font-size: 1.2rem;
+}
+.home-page #thirdSec div span p.title {
+  font-size: 1.4rem;
+  margin-bottom: 1.75rem !important;
+  font-weight: bold;
+  height: 4rem;
+}
+.home-page #thirdSec div span p.summary {
+  height: 7rem;
+}
+.home-page #thirdSec div span div {
+  padding: 1.5rem 2rem;
+  bottom: 0;
+}
+.home-page #thirdSec div span div button {
+  background-color: var(--bg-primary);
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+.home-page #thirdSec div span div button a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.home-page #fourthSec {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+.home-page #fourthSec h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+}
+.home-page #fourthSec > .row {
+  margin: 12rem auto;
+  width: 80%;
+  padding: 0 4rem 0 4rem;
+}
+.home-page #fourthSec .col-md-5,
+.home-page #fourthSec .col-md-6 {
+  background-color: #e5c571;
+}
+.home-page #fourthSec .col-md-6 img {
+  font-size: 10rem;
+  width: 70%;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+}
+.home-page #fourthSec .col-md-5 #title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--bg-primary);
+  border-bottom: 3px solid var(--bg-primary);
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  margin-top: 4rem;
+}
+.home-page #fourthSec .col-md-5 #description {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+.home-page #fourthSec .col-md-5 #viewmoreBtn {
+  margin-top: 3rem;
+  padding-right: 4rem;
+}
+.home-page #fourthSec .col-md-5 #viewmoreBtn button {
+  background-color: var(--bg-primary);
+  padding: 1.25rem 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: 25px;
+}
+.home-page #fourthSec .col-md-1 img {
+  height: 10rem;
+}
+
+
+
+/* Gioi Thieu Page */
+.gt-page {
+  background-color: var(--bg-primary);
+}
+.gt-page .gt-main {
+  padding: 8rem 0;
+}
+.gt-page .gt-main .col-md-6 img {
+  width: 70%;
+}
+.gt-page .gt-main .col-md-6 #title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+.gt-page .gt-main .col-md-6 hr {
+  width: 35%;
+  height: 3px;
+  background-color: #fff;
+  margin: 1.5rem 0 2.5rem 0;
+}
+.gt-page .gt-main .col-md-6 #description {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.gt-page .gt-detail {
+  display: flex;
+  height: 70rem;
+  padding: 6rem 0;
+  margin-top: 10rem;
+}
+.gt-page .gt-detail .gt-detail-inner {
+  display: flex;
+  background-color: #d6ccb8;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.gt-page .gt-detail.right .gt-inner-first {
+  padding: 2.5rem;
+  background: #fff;
+  height: 40rem;
+  width: 40rem;
+  z-index: 2;
+  margin-right: -30rem;
+  margin-top: 25rem;
+}
+.gt-page .gt-detail.right .gt-inner-first img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-primary);
+}
+.gt-page .gt-detail.right .gt-inner-sec {
+  background-color: #e5c571;
+  height: 55rem;
+  width: 50rem;
+  z-index: 1;
+}
+.gt-page .gt-detail.right .gt-inner-third {
+  height: auto;
+  width: 40rem;
+  background-color: var(--bg-primary);
+  z-index: 3;
+  margin-left: -15rem;
+  margin-top: -5rem;
+  padding: 3rem;
+}
+.gt-page .gt-detail.right .gt-inner-third #title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+.gt-page .gt-detail.right .gt-inner-third hr {
+  height: 3px;
+  background-color: #fff;
+  margin: 1.5rem 0 2.5rem 0;
+}
+.gt-page .gt-detail.right .gt-inner-third #description {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.gt-page .gt-detail.right .gt-inner-third #viewMoreBtn button {
+  background-color: #fff;
+  color: var(--bg-primary);
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.gt-page .gt-detail.left .gt-inner-first {
+  padding: 2.5rem;
+  background: #fff;
+  height: 40rem;
+  width: 40rem;
+  z-index: 2;
+  margin-left: -30rem;
+  margin-top: 25rem;
+}
+.gt-page .gt-detail.left .gt-inner-first img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-primary);
+}
+.gt-page .gt-detail.left .gt-inner-sec {
+  background-color: #e5c571;
+  height: 55rem;
+  width: 50rem;
+  z-index: 1;
+}
+.gt-page .gt-detail.left .gt-inner-third {
+  height: auto;
+  width: 40rem;
+  background-color: var(--bg-primary);
+  z-index: 3;
+  margin-right: -15rem;
+  margin-top: -5rem;
+  padding: 3rem;
+}
+.gt-page .gt-detail.left .gt-inner-third #title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+.gt-page .gt-detail.left .gt-inner-third hr {
+  height: 3px;
+  background-color: #fff;
+  margin: 1.5rem 0 2.5rem 0;
+}
+.gt-page .gt-detail.left .gt-inner-third #description {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.gt-page .gt-detail.left .gt-inner-third #viewMoreBtn button {
+  background-color: #fff;
+  color: var(--bg-primary);
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+
+
+/* Tin tuc page */
+.tt-page {
+  background-color: var(--bg-primary);
+}
+.tt-page .row:nth-child(1) {
+  margin-top: 3rem;
+  padding: 3rem 0;
+}
+.tt-page .row:nth-child(1) > div {
+  position: relative;
+  height: 45rem;
+  width: 70% !important;
+}
+.tt-page .row:nth-child(1) > div img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.tt-page .row:nth-child(1) > div div {
+  position: absolute;
+  height: 17rem;
+  width: 17rem;
+  background-color: #e5c571;
+  z-index: 1;
+}
+.tt-page .row:nth-child(1) #div1 {
+  top: -1.5rem;
+  right: -1.5rem;
+}
+.tt-page .row:nth-child(1) #div2 {
+  bottom: -1.5rem;
+  left: -1.5rem;
+}
+.tt-page .row:nth-child(2) {
+  margin-top: 8rem;
+  padding: 3rem 0;
+}
+.tt-page .row:nth-child(2) > .col-md-4 {
+  padding-left: 15%;
+}
+.tt-page .row:nth-child(2) > .col-md-4 div {
+  position: relative;
+}
+.tt-page .row:nth-child(2) > .col-md-4 div img {
+  position: relative;
+  width: 120%;
+  height: 120%;
+  z-index: 4;
+}
+.tt-page .row:nth-child(2) > .col-md-4 div div {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  background-color: #e5c571;
+  z-index: 1;
+}
+.tt-page .row:nth-child(2) > .col-md-4 #div3 {
+  bottom: -1.25rem;
+  left: -1.25rem;
+}
+.tt-page .row:nth-child(3) {
+  margin-top: 10rem;
+  padding: 3rem 0;
+  margin-bottom: 20rem;
+}
+.tt-page .row:nth-child(3) h1 {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 4rem;
+}
